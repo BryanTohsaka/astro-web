@@ -1,0 +1,20 @@
+---
+import { ArrowDownToLine } from "lucide-preact";
+---
+
+<nav
+  class=" bg-base-color/50 backdrop-blur-md w-full h-16 fixed flex  justify-center  lg:justify-end items-center px-20"
+>
+  <a href="/">
+    Download CV
+    <ArrowDownToLine />
+  </a>
+</nav>
+<style>
+  a {
+    @apply text-white flex items-center gap-x-2 cursor-pointer hover:bg-green-light px-8 py-2 h-fit  transition-all ease-in-out duration-300 rounded-lg hover:text-base-color hover:scale-105 hover:shadow-2xl tracking-widest border-solid border-2 border-green-base lg:border-none hover:border-none;
+  }
+  button ArrowDownToLine {
+    @apply hidden;
+  }
+</style>
